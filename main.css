@@ -50,14 +50,7 @@ body{
 
 /*.This is the Hero section */
 
-/* h1{
-  font-size: 6rem;
-  line-height: 6rem;
-  font-family:'Roboto', sans-serif;
-  color:white;
-  font-weight: 600;
-  text-transform: uppercase;
-} */
+
 h2{
   font-size: 2.6rem;
   line-height: 1.5rem;
@@ -91,7 +84,7 @@ a{
 
 
 
-/* .This is the Navbar section */
+/* #Navbar section */
 
 .header-main{
     width: 100%;
@@ -154,7 +147,7 @@ a{
 
        
 
-/* Footer Section */
+/*# Footer Section */
 
 .footer-main{
   padding: 60px 0px;
@@ -193,9 +186,9 @@ a{
   color: #68caee;
 }
 
+/* # Responsive Website */
 
-
-/* This section is to make website responsive for Mobile */
+/* .This section is to make website responsive for Mobile */
 
 @media only screen and (max-width:600px)  {
   
@@ -204,36 +197,16 @@ a{
     }
 
     .header-main-logo{
-        padding-left:20px;
+        display: none;
     }
 
     .header-main-nav{
       display: none;
     }
 
-    .header-main-sm{
-      padding:0 10px;
-   }
-
-
-
 
    /* Footer Section */
 
-                                          /* 1st part */
-
-
-.footer-testemony{
-  display: none;
-}
-
-                                            /* 2nd part */  
-.footer-get-in-touch{
-  
-  margin: 0 0 40px;
-}
-
-                                            /* 3rd part */
 
 .footer-site-map{
   flex-wrap: wrap;
