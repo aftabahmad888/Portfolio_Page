@@ -156,7 +156,9 @@ a{
 
 /* Footer Section */
 
-                       
+.footer-main{
+  padding: 60px 0px;
+}              
 
 .footer-site-map{
   display: flex;
@@ -181,6 +183,7 @@ a{
 
 .footer-site-map p{
   font-size: 16px;
+  line-height: 28px;
 }
 .footer-site-map a{
   line-height: 28px;

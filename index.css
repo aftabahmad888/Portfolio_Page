@@ -1,7 +1,13 @@
-
+:root{
+    --site-color-01:#c13584;
+    --site-color-hover:#851354;
+    --site-font-color:#3B3B3B;
+  }
+  
 
 /* #HERO SECTION */
 
+/* . the main section container */
 main{
     width: 100%;
     height: calc(100vh - 40px);
@@ -17,6 +23,8 @@ main{
     z-index: 100;
     column-gap: 15rem;
 }
+
+/* . This is the heading  */
 main .main-intro h2{
     font-size: 5.0rem;
     line-height: 6.0rem;
@@ -31,6 +39,7 @@ main p{
     max-width: 400px;
     
 }
+/*  . Button  */
 main a{
     font-size: 16px;
     display: block;
@@ -39,6 +48,8 @@ main a{
     width: fit-content;
     margin-top: 10px;
 } 
+
+/* . This is the hover effect */
 main a:hover{
     background-color: var(--site-color-hover);
     color:gainsboro;
@@ -52,7 +63,7 @@ main .main-quotes p{
 
 /*# Works section */
 
-
+/* . This is the work container */
 .index-category{
     width: 100%;
     padding: 40px 0px;
@@ -84,6 +95,9 @@ main .main-quotes p{
     align-items: center;
     position: relative;
 }
+
+/* . Images of the works */
+
 .index-category-box:nth-child(2){
     background-image: url(../IMAGES/web-development.jpg);
 }
@@ -100,6 +114,7 @@ main .main-quotes p{
     background-image: url(IMAGES/netflix.jpg);
 }
 
+/* . This is code is for overlay effect */
 .dark-overlay{
     position: absolute;
     top: 0;
@@ -110,6 +125,8 @@ main .main-quotes p{
     opacity: 0.7;
     transition: all ease-in-out 200ms;
 }
+
+/* . This code enhances the size of the box when it is hovered over*/
 .index-category-box:hover{
     width: 20rem;
     height: 20rem;
@@ -132,15 +149,9 @@ main .main-quotes p{
 
 
 
+/* #About Section */
 
-
-
-
-
-
-
-
-/* About Section */
+/* . about section container */
 
 .index-about{
     width: 100%;
@@ -148,6 +159,8 @@ main .main-quotes p{
     background-image: linear-gradient(to left, #006286, #68caee);
     color: white;
 }
+
+/*  . Here used the flex box */
 .index-about-flex{
     display: flex;
     justify-content: center;
@@ -165,14 +178,14 @@ main .main-quotes p{
     text-shadow: 2px 2px black;
 }
 .index-about-text p{
-    padding: 15px 0px;
+    padding: 20px 0px;
     text-transform: uppercase;
     
 }
 .index-about-text a{
     font-size: 1.6rem;
     display: block;
-    background-color: var( --site-color-01);
+    background-color: var(--site-color-01);
     padding: 10px 10px;
     width: fit-content;
     text-transform: uppercase;
@@ -189,7 +202,7 @@ main .main-quotes p{
 }
 .index-about-skills-bar {
     width: 100%;
-    height: 15px;
+    height: 17px;
     border: 3px solid black;
     border-radius: 8px;
 }
@@ -214,10 +227,9 @@ main .main-quotes p{
 
 
 
+/* #This section is to make website responsive for Mobile */
 
-
-
-/* This section is to make website responsive for Mobile */
+/* . Here I have used the querry selectors to make this page respnsive */
 
 @media only screen and (max-width:600px){
     /* HERO SECTION */
@@ -235,10 +247,11 @@ main .main-quotes p{
         main .main-intro h1{
             
             padding-bottom: 5%;
-            font-size: 3.5rem;
-            line-height: 4rem;
+            font-size: 0.5rem;
+            line-height: 0.5rem;
             text-align: center;
-            font-weight: 900;
+            font-weight: 500;
+            margin-top: 20px;
         }
         main p{
             
@@ -259,10 +272,6 @@ main .main-quotes p{
         }
 
 
-
-
-
-
             /* Category section */
     .index-category{
         padding: 20px 0px 10px; /* 10px is bottom */
@@ -278,9 +287,6 @@ main .main-quotes p{
         height: 160px;
 
     }
-
-
-
 
 
     /* About Section */
