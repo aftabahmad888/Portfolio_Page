@@ -13,7 +13,7 @@ main{
     height: calc(100vh - 40px);
     background-color: #020229;
     margin-top: 60px;
-    background-image: url(../images/AftabAhmad.png) , url(../images/Wall.jpg);
+    background-image: url(/images/AftabAhmad.png) , url(/images/Wall.jpg);
     background-size:120vh,cover;
     background-position: bottom , center; 
     background-repeat: no-repeat;
@@ -99,10 +99,10 @@ main .main-quotes p{
 /* . Images of the works */
 
 .index-category-box:nth-child(2){
-    background-image: url(../images/web-development.jpg);
+    background-image: url(/images/web-development.jpg);
 }
 .index-category-box:nth-child(3){
-    background-image: url(../images/Web-design.jpg);
+    background-image: url(/images/Web-design.jpg);
 }
 .index-category-box:nth-child(4){
     background-image: url(/images/Tic\ Tac\ toe.png);
