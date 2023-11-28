@@ -1,0 +1,318 @@
+
+
+/* #HERO SECTION */
+
+main{
+    width: 100%;
+    height: calc(100vh - 40px);
+    background-color: #020229;
+    margin-top: 60px;
+    background-image: url(../IMAGES/AftabAhmad.png) , url(../IMAGES/Wall.jpg);
+    background-size:120vh,cover;
+    background-position: bottom , center; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    column-gap: 15rem;
+}
+main .main-intro h2{
+    font-size: 5.0rem;
+    line-height: 6.0rem;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px black;
+    font-weight: bolder;
+}
+main p{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-shadow: 1px 1px black;
+    max-width: 400px;
+    
+}
+main a{
+    font-size: 16px;
+    display: block;
+    background-color: var(--site-color-01);
+    padding: 10px 20px;
+    width: fit-content;
+    margin-top: 10px;
+} 
+main a:hover{
+    background-color: var(--site-color-hover);
+    color:gainsboro;
+}
+main .main-quotes p{
+    border-left: 3px solid var(--site-color-01);
+    padding-left: 10px;
+    margin: 10px 0px;
+}
+
+
+/*# Works section */
+
+
+.index-category{
+    width: 100%;
+    padding: 40px 0px;
+    background-color:white ;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.index-category p {
+    color: black;
+    margin: 20px;
+    text-align: center;
+    flex-basis: 100%;
+    font-size: 4rem;
+    padding-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.index-category-box{
+    width: 18rem;
+    height: 18rem;
+    background-color: #191970;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.index-category-box:nth-child(2){
+    background-image: url(../IMAGES/web-development.jpg);
+}
+.index-category-box:nth-child(3){
+    background-image: url(../IMAGES/Web-design.jpg);
+}
+.index-category-box:nth-child(4){
+    background-image: url(IMAGES/Tic\ Tac\ toe.png);
+}
+.index-category-box:nth-child(5){
+    background-image: url(IMAGES/spotify.png);
+}
+.index-category-box:nth-child(6){
+    background-image: url(IMAGES/netflix.jpg);
+}
+
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:#020229;
+    opacity: 0.7;
+    transition: all ease-in-out 200ms;
+}
+.index-category-box:hover{
+    width: 20rem;
+    height: 20rem;
+
+}
+.index-category-box:hover .dark-overlay{
+    opacity: 0;
+    width: 20rem;
+    height: 20rem;
+
+}
+.index-category-box h3{
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    text-align: center;
+    text-shadow: -2px 4px 4px black;
+    color:white;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* About Section */
+
+.index-about{
+    width: 100%;
+    padding: 40px 0px;
+    background-image: linear-gradient(to left, #006286, #68caee);
+    color: white;
+}
+.index-about-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+.index-about-image img{
+    width: 200px;
+}
+.index-about-text{
+    flex-basis: 40rem;
+}
+.index-about-text h2{
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
+}
+.index-about-text p{
+    padding: 15px 0px;
+    text-transform: uppercase;
+    
+}
+.index-about-text a{
+    font-size: 1.6rem;
+    display: block;
+    background-color: var( --site-color-01);
+    padding: 10px 10px;
+    width: fit-content;
+    text-transform: uppercase;
+} 
+.index-about-text a:hover{
+    background-color: var(--site-color-hover);
+    color:gainsboro;
+}
+.index-about-skills{
+    flex-basis: 200px;
+}
+.index-about-skills p{
+   text-transform: uppercase;
+}
+.index-about-skills-bar {
+    width: 100%;
+    height: 15px;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+.index-about-skills-bar-fill{
+    width: 100%;
+    height: 100%;
+    background-color: var(--site-color-01);
+    border-radius: 4px;
+}
+.htmlcss{
+    width: 90%;
+}
+.javascript{
+    width: 60%;
+}
+.python{
+    width: 80%;
+}
+.photoshop{
+    width: 75%;
+}
+
+
+
+
+
+
+/* This section is to make website responsive for Mobile */
+
+@media only screen and (max-width:600px){
+    /* HERO SECTION */
+
+        main{
+           
+            align-items: flex-end;
+
+        
+        }
+        main .main-intro{
+            
+            padding-bottom: 8vh;
+        }
+        main .main-intro h1{
+            
+            padding-bottom: 5%;
+            font-size: 3.5rem;
+            line-height: 4rem;
+            text-align: center;
+            font-weight: 900;
+        }
+        main p{
+            
+            padding:  0 5% ;
+            text-align: center;
+            font-size: 1.5rem;
+            line-height: 2.3rem;
+            margin-bottom: 5%;
+            
+        }
+        main a{
+            margin:0 auto;
+            margin-bottom: 40%;
+        } 
+
+        main .main-quotes{
+            display: none;
+        }
+
+
+
+
+
+
+            /* Category section */
+    .index-category{
+        padding: 20px 0px 10px; /* 10px is bottom */
+        row-gap: 10px;
+    }
+    .index-category p {
+        padding-bottom: 5px;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .index-category-box{
+        width: calc( 100% - 20px ) ;
+        height: 160px;
+
+    }
+
+
+
+
+
+    /* About Section */
+
+    .index-about{  
+        background-image: linear-gradient(to right, #006286, #68caee);
+    }
+
+    .index-about-flex{
+       flex-wrap: wrap;
+       row-gap: 20px;
+    }
+    .index-about-image{
+        width: 60%;
+    }
+    .index-about-image img{
+        width: 100%;
+    }
+    .index-about-text{
+        flex-basis: 100%;
+
+    }
+    .index-about-text h2{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .index-about-text p{
+        text-align: center;
+    }
+    .index-about-text a{
+        margin: 0 auto;
+    } 
+ 
+   
+}
